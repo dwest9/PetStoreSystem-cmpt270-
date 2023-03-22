@@ -1,0 +1,121 @@
+// Name: David Emmanuel
+// NSID: doe869
+// Student: 11298443
+// Course: cmpt270
+// Lab section: Section T09
+   
+
+
+========================================
+Question A7Q4 : Adding a package newview
+========================================
+File: newview/EnergwindowFrame.java
+Lines: 9-11
+
+Previous:
+	None: Added new new line 
+
+
+Current:
+   	package newview;
+
+	import javax.swing.JFrame;
+
+
+
+#######################################
+File: newview/EnergwindowFrame.java
+Lines: 15-28
+
+Current:
+     public class EnergywindowFrame extends JFrame {
+    /**
+     * The width for the frame.
+     */
+    public static final int DEFAULT_WIDTH = 300;
+
+    /**
+     * The height for the frame.
+     */
+    public static final int DEFAULT_HEIGHT = 300;
+
+    /**
+     * This Creates the frame to add a newview
+     */
+
+
+
+#######################################
+File: newview/EnergwindowFrame.java
+Lines: 29-36
+
+Current:
+     public EnergywindowFrame()
+    {
+        setTitle("Energy state");
+        setSize(DEFAULT_WIDTH, DEFAULT_HEIGHT);
+        EnergywindowPanel panel = new EnergywindowPanel();
+        add(panel);
+    }
+}
+
+
+
+
+========================================
+Question A7Q4 : Added a new panel
+========================================
+File: newview/EnergwindowPanel.java
+Lines: 10-15
+
+Previous:
+	None: Added new new line 
+
+
+Current:
+   	package newview;
+
+	import view.ViewPanel;
+
+	import javax.swing.*;
+	import java.awt.*;
+
+
+
+#######################################
+File: newview/EnergwindowPanel.java
+Lines: 17-34
+
+Current:
+     public class EnergywindowPanel extends ViewPanel {
+
+    public EnergywindowPanel(){
+        setLayout(new BoxLayout(this, BoxLayout.PAGE_AXIS));
+        add(Box.createVerticalGlue());
+
+
+        JLabel space = new JLabel("Energy Level: " );
+        space.setForeground(Color.BLACK);
+        space.setAlignmentX((Component.TOP_ALIGNMENT));
+        add(space);
+        add(Box.createVerticalGlue());
+
+
+    }
+
+}
+
+
+
+========================================
+Question A7Q4 : Adding newline to showNewGameView
+========================================
+File: view/View.java
+Lines: 134-136
+
+Current:
+        EnergywindowFrame frame = new EnergywindowFrame();
+        frame.setLocation(400, 400);
+        frame.setVisible(true);
+
+

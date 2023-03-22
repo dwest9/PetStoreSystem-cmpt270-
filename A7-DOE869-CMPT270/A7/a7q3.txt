@@ -1,0 +1,172 @@
+
+// Name: David Emmanuel
+// NSID: doe869
+// Student: 11298443
+// Course: cmpt270
+// Lab section: Section T09
+
+
+
+
+========================================
+Question A7Q3 .1: Adding new lines to the model package Player class
+========================================
+File: model/Player.java
+Lines: 56-79
+
+Previous:
+	None: Added new new line for the attributes
+
+
+Current:
+     /** An integer to indicate the energy level of the tank */
+    private int tankenergylevel;
+
+    /** A boolean to indicate if the laser is out of energy */
+    private boolean outOfenergy;
+
+    /** A boolean to indicate if the laser is in low power mode */
+    private boolean lowPowermode;
+
+    /** A boolean to indicate if player move or not */
+    private boolean movementLimit;
+
+    /** A Timer for low energy state */
+    private Timer timerlowPowerstate;
+
+    /** A Timer to allow the laser to regenerate */
+    private Timer energyRegeneration;
+
+    /** A constant to indicate the laser's minimum energy level */
+    private final int Tank_Minimum_Level = 0;
+
+
+
+#########################################
+File: model/Player.java
+Lines: 105-107
+
+Public Player():
+
+Current:
+	  tankenergylevel=0;
+        outOfenergy=false;
+        lowPowermode=false;
+
+
+
+
+#########################################
+File: model/Player.java
+Lines: 109-117
+
+Public Player():
+
+Current:
+        timerlowPowerstate = new Timer(10000, new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                outOfenergy = false;
+                laserRecharging = false;
+                tankenergylevel = 5;
+            }
+        });
+        timerlowPowerstate.setRepeats(false);
+
+
+
+#########################################
+File: model/Player.java
+Lines: 129-141
+
+Public Player():
+
+Current:
+        energyRegeneration = new Timer(350, new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // increase the energy by one
+                if (tankenergylevel < 5 && outOfenergy && lowPowermode) {
+                    tankenergylevel += 1;
+                }
+                // restart the timer if the energy is still low
+                if  (tankenergylevel < 5) {
+                    energyRegeneration.restart();
+                }
+            }
+        });
+
+
+
+#########################################
+File: model/Player.java
+Lines: 129-141
+
+Public Player():
+
+Current:
+        playermovementTimer = new Timer(500, new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                movementLimit = false;
+            }
+        });
+
+
+#########################################
+File: model/Player.java
+Lines: 156-160
+
+Public void moveLeft():
+
+Current:
+        if(!lowPowermode) {
+            movementLimit = true;
+            x = Math.max(x - MOVE_DISTANCE, 0);
+            playermovementTimer.start();
+        }
+
+
+
+#########################################
+File: model/Player.java
+Lines: 167-170
+
+Public void moveRight():
+
+Current:
+        if(!lowPowermode) {
+            movementLimit = true;
+            x = Math.min(x + MOVE_DISTANCE, game.getWidth() - width);
+            playermovementTimer.start();
+        }
+
+
+
+
+
+#########################################
+File: model/Player.java
+Lines: 178-192
+
+Public void fire():
+
+Current:
+        if (!laserRecharging && !outOfenergy && !lowPowermode) {   //creating laser object
+            int laserX = x + (width - Laser.WIDTH) / 2;
+            int laserY = y - Laser.HEIGHT;
+            game.addLaser(new Laser(laserX, laserY, game));
+            laserRecharging = true;  //recharge mode
+            laserRechargeTimer.start();
+
+            // laser energy mechanics
+            tankenergylevel -= 1;
+            energyRegeneration.restart();
+
+            if (tankenergylevel <= Tank_Minimum_Level){
+                outOfenergy = true;
+                lowPowermode = true;
+                timerlowPowerstate.start();  
+        }
+
+

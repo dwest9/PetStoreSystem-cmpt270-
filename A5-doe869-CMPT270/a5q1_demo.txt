@@ -1,0 +1,270 @@
+// Name: David Emmanuel
+// NSID: doe869
+// Student: 11298443
+// Course: cmpt270
+// Lab section: Section T09
+
+
+
+C:\Users\dwest\.jdks\openjdk-18.0.2.1\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2022.2.1\lib\idea_rt.jar=62895:C:\Program Files\JetBrains\IntelliJ IDEA 2022.2.1\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\dwest\IdeaProjects\project5\out\production\project5 PetStoreSystem
+-------Initializing-------
+-------Getting Pet Store information-------
+Enter the name of the store: Jk Petstore
+Enter the integer label for the first bed: 1
+Enter the integer label for the last bed: 15
+-------System running-------
+Options:
+	1: Quit
+	2: Add a new animal to system
+	3: Add a new staff member to system
+	4: Assign a staff member to an animal
+	5: Display the empty kennels in the store
+	6: Assign an animal to a kennel
+	7: Release an animal
+	8: Remove staff-animal association
+	9: Show current system state
+Enter your selection {1-9}: 2
+-------Adding Animal to Residence-------
+Enter the name of the animal: fay
+Enter the animal ID of the animal: f9
+Enter the type of animal: dog
+Options:
+	1: Quit
+	2: Add a new animal to system
+	3: Add a new staff member to system
+	4: Assign a staff member to an animal
+	5: Display the empty kennels in the store
+	6: Assign an animal to a kennel
+	7: Release an animal
+	8: Remove staff-animal association
+	9: Show current system state
+Enter your selection {1-9}: 2
+-------Adding Animal to Residence-------
+Enter the name of the animal: hay
+Enter the animal ID of the animal: h9
+Enter the type of animal: cat
+Options:
+	1: Quit
+	2: Add a new animal to system
+	3: Add a new staff member to system
+	4: Assign a staff member to an animal
+	5: Display the empty kennels in the store
+	6: Assign an animal to a kennel
+	7: Release an animal
+	8: Remove staff-animal association
+	9: Show current system state
+Enter your selection {1-9}: 2
+-------Adding Animal to Residence-------
+Enter the name of the animal: kay
+Enter the animal ID of the animal: k9
+Enter the type of animal: dog
+Options:
+	1: Quit
+	2: Add a new animal to system
+	3: Add a new staff member to system
+	4: Assign a staff member to an animal
+	5: Display the empty kennels in the store
+	6: Assign an animal to a kennel
+	7: Release an animal
+	8: Remove staff-animal association
+	9: Show current system state
+Enter your selection {1-9}: 3
+-------Adding Staff to Store-------
+Enter the staff member's first name: jane
+Enter the staff member's last name: james
+Enter the staff member's SIN: 89
+Enter the staff member's employee ID: jj9
+Is the staff member a manager? (yes or no): no
+Options:
+	1: Quit
+	2: Add a new animal to system
+	3: Add a new staff member to system
+	4: Assign a staff member to an animal
+	5: Display the empty kennels in the store
+	6: Assign an animal to a kennel
+	7: Release an animal
+	8: Remove staff-animal association
+	9: Show current system state
+Enter your selection {1-9}: 5
+TODO: The following are the available kennels
+kennel# 1
+kennel# 2
+kennel# 3
+kennel# 4
+kennel# 5
+kennel# 6
+kennel# 7
+kennel# 8
+kennel# 9
+kennel# 10
+kennel# 11
+kennel# 12
+kennel# 13
+kennel# 14
+kennel# 15
+
+Options:
+	1: Quit
+	2: Add a new animal to system
+	3: Add a new staff member to system
+	4: Assign a staff member to an animal
+	5: Display the empty kennels in the store
+	6: Assign an animal to a kennel
+	7: Release an animal
+	8: Remove staff-animal association
+	9: Show current system state
+Enter your selection {1-9}: 6
+-------Assigning a kennel to an animal-------
+Enter the animalID of the animal: f9
+Enter the kennel label for the animal: 12
+Options:
+	1: Quit
+	2: Add a new animal to system
+	3: Add a new staff member to system
+	4: Assign a staff member to an animal
+	5: Display the empty kennels in the store
+	6: Assign an animal to a kennel
+	7: Release an animal
+	8: Remove staff-animal association
+	9: Show current system state
+Enter your selection {1-9}: 6
+-------Assigning a kennel to an animal-------
+Enter the animalID of the animal: h9
+Enter the kennel label for the animal: 1
+Options:
+	1: Quit
+	2: Add a new animal to system
+	3: Add a new staff member to system
+	4: Assign a staff member to an animal
+	5: Display the empty kennels in the store
+	6: Assign an animal to a kennel
+	7: Release an animal
+	8: Remove staff-animal association
+	9: Show current system state
+Enter your selection {1-9}: 5
+TODO: The following are the available kennels
+kennel# 2
+kennel# 3
+kennel# 4
+kennel# 5
+kennel# 6
+kennel# 7
+kennel# 8
+kennel# 9
+kennel# 10
+kennel# 11
+kennel# 13
+kennel# 14
+kennel# 15
+
+Options:
+	1: Quit
+	2: Add a new animal to system
+	3: Add a new staff member to system
+	4: Assign a staff member to an animal
+	5: Display the empty kennels in the store
+	6: Assign an animal to a kennel
+	7: Release an animal
+	8: Remove staff-animal association
+	9: Show current system state
+Enter your selection {1-9}: 7
+Enter the animals ID: 
+h9
+Options:
+	1: Quit
+	2: Add a new animal to system
+	3: Add a new staff member to system
+	4: Assign a staff member to an animal
+	5: Display the empty kennels in the store
+	6: Assign an animal to a kennel
+	7: Release an animal
+	8: Remove staff-animal association
+	9: Show current system state
+Enter your selection {1-9}: 5
+TODO: The following are the available kennels
+kennel# 1
+kennel# 2
+kennel# 3
+kennel# 4
+kennel# 5
+kennel# 6
+kennel# 7
+kennel# 8
+kennel# 9
+kennel# 10
+kennel# 11
+kennel# 13
+kennel# 14
+kennel# 15
+
+Options:
+	1: Quit
+	2: Add a new animal to system
+	3: Add a new staff member to system
+	4: Assign a staff member to an animal
+	5: Display the empty kennels in the store
+	6: Assign an animal to a kennel
+	7: Release an animal
+	8: Remove staff-animal association
+	9: Show current system state
+Enter your selection {1-9}: 9
+
+The animals in the system are:Name: fay, Type: dog, ID: f9, Kennel: 12, Assigned Staff: Name: hay, Type: cat, ID: h9, Kennel: none, Assigned Staff: Name: kay, Type: dog, ID: k9, Kennel: none, Assigned Staff: 
+-------
+The staff members in the system are:Last Name: james, First Name: jane, SIN: 89, EmployeeID: jj9, Assigned Animals: 
+-------
+The store is Store: Jk Petstore
+Number of kennels: 15
+Current animals:
+Kennel #1: [none]
+Kennel #2: [none]
+Kennel #3: [none]
+Kennel #4: [none]
+Kennel #5: [none]
+Kennel #6: [none]
+Kennel #7: [none]
+Kennel #8: [none]
+Kennel #9: [none]
+Kennel #10: [none]
+Kennel #11: [none]
+Kennel #12: fay
+Kennel #13: [none]
+Kennel #14: [none]
+Kennel #15: [none]
+Options:
+	1: Quit
+	2: Add a new animal to system
+	3: Add a new staff member to system
+	4: Assign a staff member to an animal
+	5: Display the empty kennels in the store
+	6: Assign an animal to a kennel
+	7: Release an animal
+	8: Remove staff-animal association
+	9: Show current system state
+Enter your selection {1-9}: 1
+
+The animals in the system are:Name: fay, Type: dog, ID: f9, Kennel: 12, Assigned Staff: Name: hay, Type: cat, ID: h9, Kennel: none, Assigned Staff: Name: kay, Type: dog, ID: k9, Kennel: none, Assigned Staff: 
+-------
+The staff members in the system are:Last Name: james, First Name: jane, SIN: 89, EmployeeID: jj9, Assigned Animals: 
+-------
+The store is Store: Jk Petstore
+Number of kennels: 15
+Current animals:
+Kennel #1: [none]
+Kennel #2: [none]
+Kennel #3: [none]
+Kennel #4: [none]
+Kennel #5: [none]
+Kennel #6: [none]
+Kennel #7: [none]
+Kennel #8: [none]
+Kennel #9: [none]
+Kennel #10: [none]
+Kennel #11: [none]
+Kennel #12: fay
+Kennel #13: [none]
+Kennel #14: [none]
+Kennel #15: [none]
+-------System terminated-------
+
+Process finished with exit code 0

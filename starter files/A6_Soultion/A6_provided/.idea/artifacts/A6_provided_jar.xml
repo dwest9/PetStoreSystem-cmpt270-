@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="A6_provided:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/A6_provided_jar</output-path>
+    <root id="archive" name="A6_provided.jar">
+      <element id="module-output" name="A6_provided" />
+    </root>
+  </artifact>
+</component>

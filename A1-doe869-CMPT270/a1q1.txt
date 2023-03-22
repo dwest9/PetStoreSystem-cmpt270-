@@ -1,0 +1,100 @@
+NAME: David Emmanuel
+NSID: doe869
+STUDENT ID: 11298443
+COURSE NUMBER: cmpt270
+
+
+Application: A Veterinary Clinic
+----------------------------------
+
+
+Class Animal Patient
+----------------------------------
+Attributes:
+	Name
+	registration number
+	specie
+	Container of vet 
+	    -accessed by name
+	
+----------------------------------
+Methods:      
+	get Name
+	set Name                                     
+	get registration number
+	set registration number
+	get specie
+	set specie
+	get container of vet
+	set status to admitted or discharged
+	Assign vet             
+end Animal Patient
+
+
+************************************
+
+Class Owner
+---------------
+Attributes:
+	FirstName
+	LastName
+	healthcardNumber
+	container of vet
+		-index by name
+
+-------------------------------
+Methods:
+	getFirstName
+	setFirstName
+	getLastName
+	setLastName
+	get healthcardNumber
+	set healthcardNumber
+	get vet
+	add vet
+	remove vet
+end Owner
+
+
+******************************
+
+Class Vet
+------------------------------
+Attributes:
+	firstName
+	lastName
+	shifts
+	Container of Owner 
+	    Owner will be accessed by name
+----------------------------------
+Methods:
+	getFirstName
+	setFirstName
+	getLastName
+	setLastName
+	getshifts
+	setshifts
+	getOwner
+	addOwner
+	removeOwner
+end Vet
+
+*******************************
+
+Class kennel
+----------------------------------
+Attributes:
+	kennelNumber
+	current AnimalPatient
+----------------------------------
+Methods:
+	status(isBedEmpty or occupied)
+	getNumber
+	assign AnimalPatient
+	remove AnimalPatient
+	update AnimalPatient status
+end kennel
+
+	
+
+

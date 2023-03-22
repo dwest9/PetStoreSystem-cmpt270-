@@ -1,0 +1,22 @@
+// Name: David Emmanuel
+// NSID: doe869
+// Student: 11298443
+// Course: cmpt270
+// Lab section: Section T09
+
+
+Assignment status:
+-The testings are implemented in the main method. The main methods which contains all the
+testing for each class, reports errors if found.
+
+-Everything works fine according to different testings implemented in the main method
+for Person() class, Bankstaff() class, Animal()class. For the Petstore() class, every method was implemented 
+but one error from the return value of Petstore.getAnimal returns null. 
+
+-All methods for each class have be properly implemented
+
+-I spent about 12 to 14 hours in total doing all the questions.
+
+The PetStore class creates an array of type Animal from the Animal class.
+It uses its methods to also implement its own methods
+

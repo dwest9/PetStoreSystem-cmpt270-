@@ -1,0 +1,121 @@
+NAME: David Emmanuel
+NSID: doe869
+STUDENT ID: 11298443
+COURSE NUMBER: cmpt270
+
+
+Application: A Project Management System
+
+----------------------------------
+
+
+
+Class:  Project
+----------------------------------
+Attributes:
+    Project name
+    Container of project leaders
+        indexed by name
+    Container of team members
+        indexed by team members
+    Container of clients
+        indexed by name
+    Container of ProjectFile
+        indexed by number
+----------------------------------
+Methods:
+    getName
+    add/get/set/remove project leaders
+    add/get/set/remove team members
+    add/get/set/remove clients
+    add/get/set/remove ProjectFile
+    getCompletion percentage
+end Project
+
+******************************
+
+
+Class project leaders
+----------------------------------
+Attributes:
+   firstName
+   lastName
+   Container of project
+
+----------------------------------
+Methods:
+   getFirstName
+   getLastName
+
+end project leader
+
+****************************
+
+
+Class team members
+----------------------------------
+Attributes:
+   firstName
+   lastName
+   Container of project
+
+----------------------------------
+Methods:
+   getFirstName
+   getLastName
+
+end team members
+
+*************************
+
+
+Class Client
+----------------------------------
+Attributes:
+   firstName
+   lastName
+   studentNumber
+   Container of project
+   
+----------------------------------
+Methods:
+   getFirstName
+   getLastName
+
+end Client
+
+**************************
+
+
+Class ProjectFile
+----------------------------------
+Attributes:
+    fileName
+    data
+    visibility
+    
+----------------------------------
+Methods:
+    getData
+    get/set/Name
+    getVisibility
+    setVisibility
+
+end ProjectFile
+
+
+
+
+Class completion percentage
+----------------------------------
+Attributes:
+    score
+    weight
+
+----------------------------------
+Methods:
+    get/set/Score
+    get/set/Weight
+    show percentage
+
+end completion percentage

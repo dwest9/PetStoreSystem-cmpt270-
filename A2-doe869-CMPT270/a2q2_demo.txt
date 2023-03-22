@@ -1,0 +1,39 @@
+//Name: David Emmanuel
+//NSID: doe869
+//Student: 11298443
+//Course: cmpt270
+//Lab section: Section T09
+
+
+
+C:\Users\.jdks\openjdk-18.0.2.1\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2022.2.1\lib\idea_rt.jar=64095:C:\Program Files\JetBrains\IntelliJ IDEA 2022.2.1\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\dwest\IdeaProjects\untitled\out\production\untitled;C:\Users\dwest\.m2\repository\org\jetbrains\annotations\20.1.0\annotations-20.1.0.jar a2q2
+>> STATE
+State:
+  register = 0.0
+  bRegister = false
+  heap[0] = 0.0
+  heap[1] = 0.0
+  heap[2] = 0.0
+  heap[3] = 0.0
+  heap[4] = 0.0
+>> SET 120 TELL
+>> 120.0
+false
+>> LESS 150 TELL
+>> 120.0
+true
+>> LESSEQ 99 TELL
+>> 120.0
+false
+>> GREAT 99 TELL
+>> 120.0
+true
+>> GREATEQ 125 TELL
+>> 120.0
+false
+>> EQUAL 120 TELL
+>> 120.0
+true
+>> HALT
+
+Process finished with exit code 0

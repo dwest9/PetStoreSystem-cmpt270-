@@ -1,0 +1,177 @@
+
+// Name: David Emmanuel
+// NSID: doe869
+// Student: 11298443
+// Course: cmpt270
+// Lab section: Section T09
+
+
+
+========================================
+Question A7Q1 .1: Changing the Background & foreground colour of the buttons
+========================================
+File: view/WelcomePanel.java
+
+Lines: 64-65
+
+Previous:
+        newGameButton.setBackground(Color.BLACK);
+        newGameButton.setForeground(Color.GREEN);
+
+Current:
+        newGameButton.setBackground(Color.WHITE);
+        newGameButton.setForeground(Color.BLACK);
+
+
+
+File: view/WelcomePanel.java
+
+Lines: 75-65
+
+Previous:
+        highScoreButton.setBackground(Color.BLACK);
+        highScoreButton.setForeground(Color.GREEN);
+
+
+Current:
+        highScoreButton.setBackground(Color.WHITE);
+        highScoreButton.setForeground(Color.BLACK);
+
+
+
+File: view/WelcomePanel.java
+
+Lines: 86-87
+
+Previous:
+        quitButton.setBackground(Color.BLACK);
+        quitButton.setForeground(Color.GREEN);
+
+
+Current:
+        quitButton.setBackground(Color.WHITE);
+        quitButton.setForeground(Color.BLACK);
+
+
+
+
+File: view/HighScoresPanel.java
+
+Lines: 74-75
+
+Previous:
+        backButton.setBackground(Color.BLACK);
+        backButton.setForeground(Color.GREEN);
+
+
+Current:
+        backButton.setBackground(Color.WHITE);
+        backButton.setForeground(Color.BLACK);
+
+
+
+
+
+
+
+========================================
+Question A7Q1 .2: Changing the key movement from LEFT & RIGHT to A & D
+========================================
+File: control/Controller.java
+
+Lines: 110-115
+
+Previous:
+            case (KeyEvent.VK_LEFT):
+                gameControl.getPlayer().moveLeft();
+                break;
+            case (KeyEvent.VK_RIGHT):
+                gameControl.getPlayer().moveRight();
+                break;
+
+
+Current:
+            case (KeyEvent.VK_A):
+                gameControl.getPlayer().moveLeft();
+                break;
+            case (KeyEvent.VK_D):
+                gameControl.getPlayer().moveRight();
+                break;
+
+
+
+
+
+========================================
+Question A7Q1 .3: Changing the key lasser to fire
+========================================
+File: control/Controller.java
+
+Lines: 116-118
+
+Previous:
+            case (KeyEvent.VK_SPACE):
+                gameControl.getPlayer().fire();
+                break;
+
+
+
+Current:
+            case (KeyEvent.VK_L):
+                gameControl.getPlayer().fire();
+                break;
+
+
+
+
+
+
+
+========================================
+Question A7Q1 .4: Changing lasser movement twice faster as before
+========================================
+File: model/laser.java
+
+Lines: 24
+
+Previous:
+          public static int MOVE_DISTANCE = 6;
+
+
+
+
+Current:
+         public static int MOVE_DISTANCE = 12;
+
+
+
+
+
+
+========================================
+Question A7Q1 .5: Changing invader Missile twice as faster as before
+========================================
+File: model/Missile.java
+
+Lines: 24
+
+Previous:
+          public static int MOVE_DISTANCE = 6;
+
+
+
+
+Current:
+         public static int MOVE_DISTANCE = 12;
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+//Name: David Emmanuel
+//NSID: doe869
+//Student: 11298443
+//Course: cmpt270
+//Lab section: Section T09
+
+
+C:\Users\.jdks\openjdk-18.0.2.1\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2022.2.1\lib\idea_rt.jar=64502:C:\Program Files\JetBrains\IntelliJ IDEA 2022.2.1\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\dwest\IdeaProjects\untitled\out\production\untitled;C:\Users\dwest\.m2\repository\org\jetbrains\annotations\20.1.0\annotations-20.1.0.jar a2q1_var_starter
+>> SET 12
+>> MUL 13
+>> DIV 2
+>> TELL
+78.0
+>> SET 12
+>> STORE 0
+>> ADD 1
+>> MULI 0
+>> DIV 2
+>> TELL
+78.0
+>> SET 1
+>> STORE 0
+>> STORE 1
+>> LOAD 0
+>> ADD 1
+>> STORE 0
+>> MULI 0
+>> ADDI 1
+>> STORE 1
+>> LOAD 0
+>> ADD 1
+>> STORE 0
+>> MULI 0
+>> ADDI 1
+>> STORE 1
+>> LOAD 0
+>> ADD 1
+>> STORE 0
+>> MULI 0
+>> ADDI 1
+>> STORE 1
+>> LOAD 0
+>> ADD 1
+>> STORE 0
+>> MULI 0
+>> ADDI 1
+>> STORE 1
+>> LOAD 0
+>> ADD 1
+>> STORE 0
+>> MULI 0
+>> ADDI 1
+>> STORE 1

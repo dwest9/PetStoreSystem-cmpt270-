@@ -1,0 +1,115 @@
+/*
+  CMPT 270 Course Material
+  Copyright (c) 2022
+  All rights reserved.
+
+  This document contains resources for homework assigned to students of
+  of CMPT 270 and shall not be distributed without permission.  Posting this
+  file to a public or private website, or providing this file to any person
+  not registered in CMPT 270 constitutes Academic Misconduct according to
+  to the University of Saskatchewan Policy on Academic Misconduct.
+
+  Synopsis: Solution to Assignment 5 Question 1 - demonstration
+ */
+
+*******************************************************************************
+
+-------Initializing-------
+-------Getting Pet Store information-------
+Enter the name of the store: Pennys Pets
+Enter the integer label for the first bed: 12
+Enter the integer label for the last bed: 15
+-------System running-------
+Options:
+	1: Quit
+	2: Add a new animal to system
+	3: Add a new staff member to system
+	4: Assign a staff member to an animal
+	5: Display the empty kennels in the store
+	6: Assign an animal to a kennel
+	7: Release an animal
+	8: Remove staff-animal association
+	9: Show current system state
+Enter your selection {1-9}: 2
+-------Adding Animal to Residence-------
+Enter the name of the animal: Sparky
+Enter the animal ID of the animal: spk123
+Enter the type of animal: dog
+Options:
+	1: Quit
+	2: Add a new animal to system
+	3: Add a new staff member to system
+	4: Assign a staff member to an animal
+	5: Display the empty kennels in the store
+	6: Assign an animal to a kennel
+	7: Release an animal
+	8: Remove staff-animal association
+	9: Show current system state
+Enter your selection {1-9}: 6
+-------Assigning a kennel to an animal-------
+Enter the animalID of the animal: spk123
+Enter the kennel label for the animal: 14
+Options:
+	1: Quit
+	2: Add a new animal to system
+	3: Add a new staff member to system
+	4: Assign a staff member to an animal
+	5: Display the empty kennels in the store
+	6: Assign an animal to a kennel
+	7: Release an animal
+	8: Remove staff-animal association
+	9: Show current system state
+Enter your selection {1-9}: 5
+Showing available kennels:
+12 13 15 
+Options:
+	1: Quit
+	2: Add a new animal to system
+	3: Add a new staff member to system
+	4: Assign a staff member to an animal
+	5: Display the empty kennels in the store
+	6: Assign an animal to a kennel
+	7: Release an animal
+	8: Remove staff-animal association
+	9: Show current system state
+Enter your selection {1-9}: 7
+Enter the ID of the animal to release: spk123
+Options:
+	1: Quit
+	2: Add a new animal to system
+	3: Add a new staff member to system
+	4: Assign a staff member to an animal
+	5: Display the empty kennels in the store
+	6: Assign an animal to a kennel
+	7: Release an animal
+	8: Remove staff-animal association
+	9: Show current system state
+Enter your selection {1-9}: 5
+Showing available kennels:
+12 13 14 15 
+Options:
+	1: Quit
+	2: Add a new animal to system
+	3: Add a new staff member to system
+	4: Assign a staff member to an animal
+	5: Display the empty kennels in the store
+	6: Assign an animal to a kennel
+	7: Release an animal
+	8: Remove staff-animal association
+	9: Show current system state
+Enter your selection {1-9}: 1
+
+The animals in the system are:Name: Sparky, Type: dog, ID: spk123, Kennel: none, Assigned Staff: 
+-------
+The staff members in the system are:
+-------
+The store is Store: Pennys Pets
+Number of kennels: 4
+Current animals:
+Kennel #12: [none]
+Kennel #13: [none]
+Kennel #14: [none]
+Kennel #15: [none]
+-------System terminated-------
+
+Process finished with exit code 0

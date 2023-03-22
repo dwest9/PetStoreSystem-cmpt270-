@@ -1,0 +1,146 @@
+// Name: David Emmanuel
+// NSID: doe869
+// Student: 11298443
+// Course: cmpt270
+// Lab section: Section T09
+   
+
+
+========================================
+Question A7Q2 .1: Adding to the model package Game class
+========================================
+File: model/Game.java
+Lines: 69
+
+Previous:
+	None: Added new new line for the container for lasers shot
+
+
+Current:
+     protected  List <Laser > lasersList;
+
+
+#########################################
+File: model/Game.java
+Lines: 96
+
+Current:
+	lasersList = new  LinkedList <Laser >();
+
+
+##########################################
+File: model/Game.java
+Lines: 173
+
+Previous:
+	laser = null;
+
+
+Current:
+	  lasersList.clear();
+
+
+##########################################
+File: model/Game.java
+Lines: 251-258
+
+Previous:
+	   if (laser != null) {
+            laser.update();
+            if (laser.isDead())
+                laser = null;
+         }
+
+
+
+Current:
+	  Iterator<Laser> laserIterator = lasersList.iterator();
+        while (laserIterator.hasNext()) {
+            Laser laser = laserIterator.next();
+            if (!laser.isDead())
+                laser.update();
+            if (laser.isDead())
+                laserIterator.remove();
+        }
+
+
+##############################################
+File: model/Game.java
+Lines: 361
+
+Previous:
+	   if (laser != null)
+
+
+Current:
+	      for (Laser laser : lasersList)
+
+
+##############################################
+
+
+
+========================================
+Question A7Q2 .: Adding to the model package Player class
+========================================
+File: model/Player.java
+Lines: 54 & 84
+
+Previous:
+	None: Added new new line for Timer for laser rate and boolean for laser recharge
+
+
+Current:
+        
+    private Timer laserRechargeTimer;
+
+    
+    private boolean laserRecharging;
+
+
+###############################################
+File: model/Player.java
+Lines: 96-103
+
+Previous:
+	None: Added new new line for Timer for laser rate and boolean for laser recharge
+
+
+Current:
+        
+        laserRecharging = false;
+        laserRechargeTimer = new Timer(200, new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                laserRecharging = false;
+            }
+        });
+        laserRechargeTimer.setRepeats(false);
+
+
+##############################################
+File: model/Player.java
+Lines: 178-183
+
+Previous:
+	        
+		if (game.laser == null) {
+            int laserX = x + (width - Laser.WIDTH) / 2;
+            int laserY = y - Laser.HEIGHT;
+            game.addLaser(new Laser(laserX, laserY, game));
+
+
+
+Current:
+        if (!laserRecharging) {      //creating laser object
+            int laserX = x + (width - Laser.WIDTH) / 2;
+            int laserY = y - Laser.HEIGHT;
+            game.addLaser(new Laser(laserX, laserY, game));
+            laserRecharging = true;     //recharge mode
+            laserRechargeTimer.start();
+        
+        }
+
+
+
+
+
